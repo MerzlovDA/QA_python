@@ -3,3 +3,4 @@ class Group(object):
         self.name = name
         self.header = header
         self.footer = footer
+
