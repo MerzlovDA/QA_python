@@ -1,14 +1,5 @@
 # -*- coding: utf-8 -*-
-import pytest
 from model.group import Group
-from fixture.ApplicationTest import ApplicationTest
-
-
-@pytest.fixture
-def app(request):
-    fixture = ApplicationTest()
-    request.addfinalizer(fixture.destroy)
-    return fixture
 
 
 def test_add_group(app):
